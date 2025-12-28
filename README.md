@@ -15,7 +15,8 @@ This project, **NutriLens Vision**, is an AI-powered food recognition and nutrit
 ```
 f:\AI\CNN\
 ├── docs/
-│   └── papers.pdf                                           # Research papers (PDF format)
+│   ├── papers.pdf                                           # Research papers (PDF format)
+│   └── Project_Architecture_Mermaid.md                      # Architecture diagrams (Mermaid)
 ├── notebooks/
 │   ├── 01_card_detection_and_nutrition_estimation.ipynb     # Card detection & nutrition estimation
 │   ├── 02_deeplabv3_mobilenetv2_segmentation_training.ipynb # DeepLabV3+ segmentation model
@@ -238,6 +239,8 @@ The `docs/papers.pdf` file contains research literature that informed this proje
 
 ## 🔄 Processing Pipeline
 
+For detailed architecture diagrams, please refer to [docs/Project_Architecture_Mermaid.md](docs/Project_Architecture_Mermaid.md).
+
 ```mermaid
 graph TD
     A[Input Image with Food + Reference Card] --> B[Card Detection Model]
@@ -331,9 +334,3 @@ pip install opencv-python pillow numpy matplotlib tqdm
 - **GradScaler Deprecation**: The notebooks use the deprecated `torch.cuda.amp.GradScaler()`. For PyTorch 2.0+, use `torch.amp.GradScaler('cuda')`.
 - **Class Names**: The `FOODSEG103_CLASS_MAP` is referenced but defined externally; ensure the class mapping is loaded before inference visualization.
 - **Dataset Paths**: Update `ROOT_DIR` paths as needed for your local setup.
-
----
-
-*Documentation generated from project analysis on 2024-12-28*
-#   n u t r i l e n s - v i s i o n  
- 
