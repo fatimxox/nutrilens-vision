@@ -41,8 +41,8 @@ f:\AI\CNN\
 | **Segmentation Model v1** | ✅ Complete | DeepLabV3+ with MobileNetV2 |
 | **Segmentation Model v2** | ✅ Complete | ResNet50+FPN+ASPP (~29% mIoU) |
 | **Nutrition Estimation Pipeline** | ✅ Complete | Volume/calorie calculation |
-| **Backend API** | 🚧 In Progress | FastAPI serving models & logic |
-| **Frontend Application** | 🚧 In Progress | React UI for capture & dashboard |
+| **Backend API** | ✅ Complete | FastAPI serving models & logic |
+| **Frontend Application** | ✅ Complete | React UI for capture & dashboard |
 
 ---
 
